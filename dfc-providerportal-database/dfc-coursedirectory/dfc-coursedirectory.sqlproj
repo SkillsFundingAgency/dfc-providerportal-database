@@ -63,7 +63,6 @@
     <Folder Include="dbo\" />
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
-    <Folder Include="Security\" />
     <Folder Include="dbo\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
@@ -101,19 +100,6 @@
     <Build Include="dbo\Tables\ProviderUser.sql" />
     <Build Include="dbo\Views\LARS.sql" />
     <Build Include="dbo\Views\ONSPD.sql" />
-    <Build Include="Security\LiamWright.sql" />
-    <Build Include="Security\UsmanKhan.sql" />
-    <Build Include="Security\KarlWootten.sql" />
-    <Build Include="Security\MahinderSuniara.sql" />
-    <Build Include="Security\MahmoodAkhtar.sql" />
-    <Build Include="Security\AnatoliMalev.sql" />
-    <Build Include="Security\dfc-coursedirectory-console-import.sql" />
-    <Build Include="Security\svc-dfc-coursedirectory.sql" />
-    <Build Include="Security\KadirMalik.sql" />
-    <Build Include="Security\EltonLovell.sql" />
-    <Build Include="Security\ShivaniSrivastava.sql" />
-    <Build Include="Security\IanRose.sql" />
-    <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Stored Procedures\dfc_CourseTransferAdd.sql" />
     <Build Include="dbo\Stored Procedures\dfc_CourseTransferCourseAuditAdd.sql" />
     <Build Include="dbo\Stored Procedures\dfc_CourseTransferProviderAuditAdd.sql" />
@@ -122,7 +108,6 @@
     <Build Include="dbo\Stored Procedures\dfc_GetCoursesByProviderUKPRN.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetProviderUKPRNs.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetUserAuthorisationDetailsByEmail.sql" />
-    <Build Include="Security\https___dfcdevsharedsql.blob.core.windows.net_sqldbauditlogs.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />

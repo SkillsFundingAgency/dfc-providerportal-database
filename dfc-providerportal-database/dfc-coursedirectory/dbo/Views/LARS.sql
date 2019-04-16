@@ -1,7 +1,7 @@
-﻿CREATE VIEW dbo.LARS
+﻿CREATE VIEW [dbo].[LARS]
 WITH SCHEMABINDING 
 AS
-SELECT        ld.LearnAimRef, ld.LearnAimRefTitle, lt.LearnAimRefTypeDesc, ld.NotionalNVQLevelv2, ld.AwardOrgCode, ld.LearnDirectClassSystemCode1, ld.LearnDirectClassSystemCode2, ld.SectorSubjectAreaTier1, 
+SELECT        ld.LearnAimRef, ld.LearnAimRefTitle, lt.LearnAimRefTypeDesc, ld.NotionalNVQLevelv2, ld.AwardOrgCode, ld.AwardOrgAimRef, ld.LearnDirectClassSystemCode1, ld.LearnDirectClassSystemCode2, ld.SectorSubjectAreaTier1, 
                          SSA1.SectorSubjectAreaTier1Desc, ld.SectorSubjectAreaTier2, SSA2.SectorSubjectAreaTier2Desc, ld.GuidedLearningHours, ld.TotalQualificationTime, ld.UnitType, ac.AwardOrgName, ld.Modified_On, ld.EffectiveTo, 
                          ld.CertificationEndDate
 FROM            dbo.LearningDelivery AS ld INNER JOIN
@@ -9,8 +9,8 @@ FROM            dbo.LearningDelivery AS ld INNER JOIN
                          dbo.LearnAimRefType AS lt ON lt.LearnAimRefType = ld.LearnAimRefType INNER JOIN
                          dbo.SectorSubjectAreaTier1 AS SSA1 ON SSA1.SectorSubjectAreaTier1 = ld.SectorSubjectAreaTier1 INNER JOIN
                          dbo.SectorSubjectAreaTier2 AS SSA2 ON SSA2.SectorSubjectAreaTier2 = ld.SectorSubjectAreaTier2
-
 GO
+
 EXECUTE sp_addextendedproperty @name = N'MS_DiagramPane1', @value = N'[0E232FF0-B466-11cf-A24F-00AA00A3EFFF, 1.00]
 Begin DesignProperties = 
    Begin PaneConfigurations = 

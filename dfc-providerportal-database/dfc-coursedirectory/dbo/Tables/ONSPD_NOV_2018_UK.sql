@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[ONSPD_NOV_2018_UK] (
+﻿CREATE TABLE [ONSPD].[ONSPD_NOV_2018_UK] (
     [pcd]       NVARCHAR (50) NOT NULL,
     [pcd2]      NVARCHAR (50) NOT NULL,
     [pcds]      NVARCHAR (50) NOT NULL,

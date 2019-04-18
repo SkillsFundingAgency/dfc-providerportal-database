@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AspNetRoleClaims] (
+﻿CREATE TABLE [Identity].[AspNetRoleClaims] (
     [Id]         INT            IDENTITY (1, 1) NOT NULL,
     [RoleId]     NVARCHAR (450) NOT NULL,
     [ClaimType]  NVARCHAR (MAX) NULL,
@@ -9,5 +9,5 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_AspNetRoleClaims_RoleId]
-    ON [dbo].[AspNetRoleClaims]([RoleId] ASC);
+    ON [Identity].[AspNetRoleClaims]([RoleId] ASC);
 

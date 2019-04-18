@@ -4,7 +4,7 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[dfc_CourseTransferAdd] 
+CREATE PROCEDURE dbo.dfc_CourseTransferAdd
 (
 			@StartTransferDateTime datetime
            ,@TransferMethod int
@@ -17,13 +17,13 @@ CREATE PROCEDURE [dbo].[dfc_CourseTransferAdd]
 AS
 BEGIN
 
-	INSERT INTO [CourseTransfer]
-           ([StartTransferDateTime]
-           ,[TransferMethod]
-           ,[DeploymentEnvironment]
-           ,[CreatedById]
-           ,[CreatedByName]
-           ,[Ukprn])
+	INSERT INTO Tribal.CourseTransfer
+           (StartTransferDateTime
+           ,TransferMethod
+           ,DeploymentEnvironment
+           ,CreatedById
+           ,CreatedByName
+           ,Ukprn)
      VALUES
            (@StartTransferDateTime
            ,@TransferMethod

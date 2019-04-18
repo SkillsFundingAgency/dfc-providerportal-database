@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[CourseTransfer] (
+﻿CREATE TABLE [Tribal].[CourseTransfer] (
     [CourseTransferId]                    INT             IDENTITY (1, 1) NOT NULL,
     [StartTransferDateTime]               DATETIME        NOT NULL,
     [TransferMethod]                      INT             NOT NULL,

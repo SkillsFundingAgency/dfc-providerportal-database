@@ -9,9 +9,8 @@ CREATE PROCEDURE [dbo].[dfc_GetProviderUKPRNs]
 AS
 BEGIN
 
-	SELECT [Ukprn]
-	FROM [CourseMigration]
-	WHERE [ReadyToMigrate] = 1
+	SELECT Ukprn
+	FROM Tribal.CourseMigration
+	WHERE ReadyToMigrate = 1
 
 END
-

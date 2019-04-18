@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AspNetRoles] (
+﻿CREATE TABLE [Identity].[AspNetRoles] (
     [Id]                NVARCHAR (450) NOT NULL,
     [Name]              NVARCHAR (256) NOT NULL,
     [Description]       NVARCHAR (MAX) NOT NULL,

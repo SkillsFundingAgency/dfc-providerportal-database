@@ -4,7 +4,7 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[dfc_CourseTransferProviderAuditAdd]
+CREATE PROCEDURE dbo.dfc_CourseTransferProviderAuditAdd
 (
 			@CourseTransferId int
            ,@Ukprn int
@@ -22,19 +22,19 @@ CREATE PROCEDURE [dbo].[dfc_CourseTransferProviderAuditAdd]
 AS
 BEGIN
 
-	INSERT INTO [CourseTransfer_ProviderAudit]
-           ([CourseTransferId]
-		   ,[Ukprn]
-           ,[CoursesToBeMigrated]
-           ,[CoursesGoodToBeMigrated]
-           ,[CoursesGoodToBeMigratedPending]
-           ,[CoursesGoodToBeMigratedLive]
-           ,[CoursesNotGoodToBeMigrated]
-           ,[MigrationSuccesses]
-           ,[MigrationFailures]
-           ,[ProviderReportFileName]
-           ,[TimeTaken]
-           ,[MigrationNote])
+	INSERT INTO Tribal.CourseTransfer_ProviderAudit
+           (CourseTransferId
+		   ,Ukprn
+           ,CoursesToBeMigrated
+           ,CoursesGoodToBeMigrated
+           ,CoursesGoodToBeMigratedPending
+           ,CoursesGoodToBeMigratedLive
+           ,CoursesNotGoodToBeMigrated
+           ,MigrationSuccesses
+           ,MigrationFailures
+           ,ProviderReportFileName
+           ,TimeTaken
+           ,MigrationNote)
      VALUES
            (@CourseTransferId
 		   ,@Ukprn

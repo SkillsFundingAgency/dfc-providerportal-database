@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Course] (
+﻿CREATE TABLE [Tribal].[Course] (
     [CourseId]                     INT             NOT NULL,
     [ProviderId]                   INT             NOT NULL,
     [CourseTitle]                  NVARCHAR (255)  NOT NULL,

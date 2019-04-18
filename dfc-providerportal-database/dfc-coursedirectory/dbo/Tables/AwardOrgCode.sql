@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AwardOrgCode] (
+﻿CREATE TABLE [LARS].[AwardOrgCode] (
     [AwardOrgCode]                       NVARCHAR (30)  NULL,
     [AwardOrgUKPRN]                      NVARCHAR (50)  NOT NULL,
     [AwardOrgName]                       NVARCHAR (150) NOT NULL,
@@ -14,5 +14,4 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IDX_AwardOrgCode]
-    ON [dbo].[AwardOrgCode]([AwardOrgCode] ASC);
-
+    ON [LARS].[AwardOrgCode]([AwardOrgCode] ASC);

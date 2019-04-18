@@ -4,7 +4,7 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE [dbo].[dfc_CourseTransferUpdate] 
+CREATE PROCEDURE dbo.dfc_CourseTransferUpdate
 (
 	   @CourseTransferId int
 	  ,@CountProvidersToBeMigrated int
@@ -26,22 +26,22 @@ CREATE PROCEDURE [dbo].[dfc_CourseTransferUpdate]
 AS
 BEGIN
 	
-	UPDATE [CourseTransfer]
-   SET [CountProvidersToBeMigrated] = @CountProvidersToBeMigrated
-      ,[CountProvidersMigrated] = @CountProvidersMigrated
-      ,[CountProvidersNotMigrated] = @CountProvidersNotMigrated
-      ,[CountAllCoursesToBeMigrated] = @CountAllCoursesToBeMigrated
-      ,[CountCoursesGoodToBeMigrated] = @CountCoursesGoodToBeMigrated
-      ,[CountCoursesNotGoodToBeMigrated] = @CountCoursesNotGoodToBeMigrated
-      ,[CountCoursesGoodToBeMigratedLive] = @CountCoursesGoodToBeMigratedLive
-      ,[CountCoursesGoodToBeMigratedPending] = @CountCoursesGoodToBeMigratedPending
-      ,[CountAllCoursesMigrated] = @CountAllCoursesMigrated
-      ,[CountAllCoursesNotMigrated] = @CountAllCoursesNotMigrated
-      ,[CompleteTransferDateTime] = @CompleteTransferDateTime
-      ,[TimeTaken] = @TimeTaken
-	  ,[BulkUploadFileName] = @BulkUploadFileName
-      ,[AdminReportFileName] = @AdminReportFileName
-      ,[TransferNote] = @TransferNote
- WHERE [CourseTransferId] = @CourseTransferId
+	UPDATE Tribal.CourseTransfer
+   SET CountProvidersToBeMigrated = @CountProvidersToBeMigrated
+      ,CountProvidersMigrated = @CountProvidersMigrated
+      ,CountProvidersNotMigrated = @CountProvidersNotMigrated
+      ,CountAllCoursesToBeMigrated = @CountAllCoursesToBeMigrated
+      ,CountCoursesGoodToBeMigrated = @CountCoursesGoodToBeMigrated
+      ,CountCoursesNotGoodToBeMigrated = @CountCoursesNotGoodToBeMigrated
+      ,CountCoursesGoodToBeMigratedLive = @CountCoursesGoodToBeMigratedLive
+      ,CountCoursesGoodToBeMigratedPending = @CountCoursesGoodToBeMigratedPending
+      ,CountAllCoursesMigrated = @CountAllCoursesMigrated
+      ,CountAllCoursesNotMigrated = @CountAllCoursesNotMigrated
+      ,CompleteTransferDateTime = @CompleteTransferDateTime
+      ,TimeTaken = @TimeTaken
+	  ,BulkUploadFileName = @BulkUploadFileName
+      ,AdminReportFileName = @AdminReportFileName
+      ,TransferNote = @TransferNote
+ WHERE CourseTransferId = @CourseTransferId
 
 END

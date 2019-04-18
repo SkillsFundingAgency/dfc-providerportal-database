@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[CourseTransfer_CourseAudit] (
+﻿CREATE TABLE [Tribal].[CourseTransfer_CourseAudit] (
     [CourseMigrationCourseAuditId] INT            IDENTITY (1, 1) NOT NULL,
     [CourseTransferId]             INT            NULL,
     [Ukprn]                        INT            NULL,
@@ -12,6 +12,6 @@
     [MigrationSuccess]             INT            NULL,
     [CourseMigrationNote]          NVARCHAR (MAX) NULL,
     CONSTRAINT [PK_CourseTransfer_CourseAudit] PRIMARY KEY CLUSTERED ([CourseMigrationCourseAuditId] ASC),
-    CONSTRAINT [FK_CourseTransfer_CourseAudit_CourseTransfer] FOREIGN KEY ([CourseTransferId]) REFERENCES [dbo].[CourseTransfer] ([CourseTransferId])
+    CONSTRAINT [FK_CourseTransfer_CourseAudit_CourseTransfer] FOREIGN KEY ([CourseTransferId]) REFERENCES [Tribal].[CourseTransfer] ([CourseTransferId])
 );
 

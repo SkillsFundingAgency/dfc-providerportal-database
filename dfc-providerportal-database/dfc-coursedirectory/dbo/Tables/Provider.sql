@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[Provider] (
+﻿CREATE TABLE [Tribal].[Provider] (
     [ProviderId]                         INT            IDENTITY (1, 1) NOT NULL,
     [ProviderName]                       NVARCHAR (200) NOT NULL,
     [ProviderNameAlias]                  NVARCHAR (200) NULL,

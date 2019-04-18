@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AspNetUserClaims] (
+﻿CREATE TABLE [Identity].[AspNetUserClaims] (
     [Id]         INT            IDENTITY (1, 1) NOT NULL,
     [UserId]     NVARCHAR (450) NOT NULL,
     [ClaimType]  NVARCHAR (MAX) NULL,
@@ -9,5 +9,5 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_AspNetUserClaims_UserId]
-    ON [dbo].[AspNetUserClaims]([UserId] ASC);
+    ON [Identity].[AspNetUserClaims]([UserId] ASC);
 

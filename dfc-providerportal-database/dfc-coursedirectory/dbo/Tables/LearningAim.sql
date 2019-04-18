@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[LearningAim] (
+﻿CREATE TABLE [LARS].[LearningAim] (
     [LearningAimRefId]            VARCHAR (10)   NOT NULL,
     [Qualification]               VARCHAR (150)  NOT NULL,
     [LearningAimTitle]            NVARCHAR (255) NOT NULL,

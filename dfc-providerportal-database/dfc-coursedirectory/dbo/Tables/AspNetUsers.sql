@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AspNetUsers] (
+﻿CREATE TABLE [Identity].[AspNetUsers] (
     [Id]                    NVARCHAR (450)     NOT NULL,
     [Email]                 NVARCHAR (256)     NULL,
     [EmailConfirmed]        BIT                NOT NULL,

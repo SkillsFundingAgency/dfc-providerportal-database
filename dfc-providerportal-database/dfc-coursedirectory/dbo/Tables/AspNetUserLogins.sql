@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AspNetUserLogins] (
+﻿CREATE TABLE [Identity].[AspNetUserLogins] (
     [LoginProvider]       NVARCHAR (128) NOT NULL,
     [ProviderKey]         NVARCHAR (128) NOT NULL,
     [ProviderDisplayName] NVARCHAR (MAX) NULL,
@@ -9,5 +9,5 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IX_AspNetUserLogins_UserId]
-    ON [dbo].[AspNetUserLogins]([UserId] ASC);
+    ON [Identity].[AspNetUserLogins]([UserId] ASC);
 

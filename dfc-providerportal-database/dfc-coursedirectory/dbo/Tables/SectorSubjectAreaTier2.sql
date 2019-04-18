@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[SectorSubjectAreaTier2] (
+﻿CREATE TABLE [LARS].[SectorSubjectAreaTier2] (
     [SectorSubjectAreaTier2]      NVARCHAR (50)  NOT NULL,
     [SectorSubjectAreaTier2Desc]  NVARCHAR (100) NOT NULL,
     [SectorSubjectAreaTier2Desc2] NVARCHAR (50)  NOT NULL,

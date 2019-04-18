@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[CourseInstanceStartDate] (
+﻿CREATE TABLE [Tribal].[CourseInstanceStartDate] (
     [CourseInstanceStartDateId] INT  IDENTITY (1, 1) NOT NULL,
     [CourseInstanceId]          INT  NOT NULL,
     [StartDate]                 DATE NOT NULL,

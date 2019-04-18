@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[LearningDelivery] (
+﻿CREATE TABLE [LARS].[LearningDelivery] (
     [LearnAimRef]                 NVARCHAR (10)  NULL,
     [EffectiveFrom]               NVARCHAR (MAX) NOT NULL,
     [LearnAimRefTitle]            NVARCHAR (MAX) NOT NULL,
@@ -63,10 +63,10 @@
 
 GO
 CREATE NONCLUSTERED INDEX [IDX_AwardOrgCode]
-    ON [dbo].[LearningDelivery]([AwardOrgCode] ASC);
+    ON [LARS].[LearningDelivery]([AwardOrgCode] ASC);
 
 
 GO
 CREATE UNIQUE NONCLUSTERED INDEX [IDX_LearnAimRef]
-    ON [dbo].[LearningDelivery]([LearnAimRef] ASC);
+    ON [LARS].[LearningDelivery]([LearnAimRef] ASC);
 

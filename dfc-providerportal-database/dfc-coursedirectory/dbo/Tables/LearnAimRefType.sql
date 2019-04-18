@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[LearnAimRefType] (
+﻿CREATE TABLE [LARS].[LearnAimRefType] (
     [LearnAimRefType]      NVARCHAR (50)  NOT NULL,
     [LearnAimRefTypeDesc]  NVARCHAR (100) NOT NULL,
     [LearnAimRefTypeDesc2] NVARCHAR (50)  NOT NULL,

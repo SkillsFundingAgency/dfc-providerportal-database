@@ -84,7 +84,7 @@
     <Recovery>FULL</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
-    <DacVersion>2019.04.24.001</DacVersion>
+    <DacVersion>2019.04.25.001</DacVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -363,6 +363,10 @@
     <Build Include="Security\LARS.sql" />
     <Build Include="Security\ONSPD.sql" />
     <Build Include="Security\Tribal.sql" />
+    <Build Include="dbo\Views\LARS.sql">
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />

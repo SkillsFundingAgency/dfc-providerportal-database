@@ -12,7 +12,7 @@ AS
 						ci.AttendanceTypeId,
 						ci.StartDateDescription,
 						cisd.StartDate,
-						ci.Url,
+						ci.[Url],
 						ci.Price,
 						ci.PriceAsText,
 						ci.DurationUnitId,

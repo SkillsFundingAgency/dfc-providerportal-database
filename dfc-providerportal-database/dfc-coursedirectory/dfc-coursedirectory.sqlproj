@@ -84,7 +84,7 @@
     <Recovery>FULL</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
-    <DacVersion>2019.04.29.001</DacVersion>
+    <DacVersion>2019.05.15.001</DacVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -167,34 +167,34 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Identity\Tables\AspNetRoleClaims.sql">
+    <None Include="Identity\Tables\AspNetRoleClaims.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetRoles.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetRoles.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetUserClaims.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetUserClaims.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetUserLogins.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetUserLogins.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetUserRoles.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetUserRoles.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetUsers.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetUsers.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Identity\Tables\AspNetUserTokens.sql">
+    </None>
+    <None Include="Identity\Tables\AspNetUserTokens.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="LARS\Tables\AwardOrgCode.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -291,10 +291,10 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Tribal\Tables\ProviderUser.sql">
+    <None Include="Tribal\Tables\ProviderUser.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
+    </None>
     <Build Include="dbo\Views\ONSPD.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>

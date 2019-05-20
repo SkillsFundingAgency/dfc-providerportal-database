@@ -84,7 +84,7 @@
     <Recovery>FULL</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
-    <DacVersion>2019.05.15.001</DacVersion>
+    <DacVersion>2019.05.20.001</DacVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -133,6 +133,7 @@
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Identity\PostDeployment" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -167,34 +168,34 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <None Include="Identity\Tables\AspNetRoleClaims.sql">
+    <Build Include="Identity\Tables\AspNetRoleClaims.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetRoles.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetRoles.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetUserClaims.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetUserClaims.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetUserLogins.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetUserLogins.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetUserRoles.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetUserRoles.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetUsers.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetUsers.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
-    <None Include="Identity\Tables\AspNetUserTokens.sql">
+    </Build>
+    <Build Include="Identity\Tables\AspNetUserTokens.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
-    </None>
+    </Build>
     <Build Include="LARS\Tables\AwardOrgCode.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -370,5 +371,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Identity\PostDeployment\Script.AspNetSeedData.sql" />
   </ItemGroup>
 </Project>

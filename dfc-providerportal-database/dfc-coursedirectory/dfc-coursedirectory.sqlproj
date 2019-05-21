@@ -84,7 +84,7 @@
     <Recovery>FULL</Recovery>
     <EnableFullTextSearch>True</EnableFullTextSearch>
     <DefaultFilegroup>PRIMARY</DefaultFilegroup>
-    <DacVersion>2019.05.20.001</DacVersion>
+    <DacVersion>2019.05.21.001</DacVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -133,7 +133,6 @@
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="Identity\PostDeployment" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -371,8 +370,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />
-  </ItemGroup>
-  <ItemGroup>
-    <PostDeploy Include="Identity\PostDeployment\Script.AspNetSeedData.sql" />
   </ItemGroup>
 </Project>

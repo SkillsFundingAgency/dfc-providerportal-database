@@ -133,6 +133,7 @@
     <Folder Include="Security\" />
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Restore" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -367,8 +368,13 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
+    <Build Include="Restore\Credentials_v1.0.sql" />
+    <Build Include="Restore\DropDatabase_v1.0.sql" />
+    <Build Include="Restore\Restore_v1.0.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />
+    <None Include="Restore\Notes.txt" />
+    <None Include="Restore\SQL Steps.png" />
   </ItemGroup>
 </Project>

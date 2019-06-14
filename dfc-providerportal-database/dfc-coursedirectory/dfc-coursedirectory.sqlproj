@@ -368,9 +368,9 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Restore\Credentials_v1.0.sql" />
-    <Build Include="Restore\DropDatabase_v1.0.sql" />
-    <Build Include="Restore\Restore_v1.0.sql" />
+    <None Include="Restore\Credentials_v1.0.sql" />
+    <None Include="Restore\DropDatabase_v1.0.sql" />
+    <None Include="Restore\Restore_v1.0.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />

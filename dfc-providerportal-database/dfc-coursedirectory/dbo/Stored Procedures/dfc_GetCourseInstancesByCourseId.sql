@@ -18,7 +18,8 @@ AS
 						ci.DurationUnitId,
 						ci.DurationUnit,
 						ci.StudyModeId,
-						ci.AttendancePatternId
+						ci.AttendancePatternId,
+						ci.RecordStatusId
 	  FROM				Tribal.CourseInstance ci
 	  LEFT OUTER JOIN	Tribal.CourseInstanceVenue civ
 	  ON				ci.CourseInstanceId = civ.CourseInstanceId

@@ -134,6 +134,8 @@
     <Folder Include="dbo\Functions\" />
     <Folder Include="dbo\Stored Procedures\" />
     <Folder Include="Restore" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Jobs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -376,5 +378,6 @@
     <None Include="dfc-coursedirectory.dacpac" />
     <None Include="Restore\Notes.txt" />
     <None Include="Restore\SQL Steps.png" />
+    <None Include="Scripts\Jobs\TribalDatabaseRestore_job.sql" />
   </ItemGroup>
 </Project>

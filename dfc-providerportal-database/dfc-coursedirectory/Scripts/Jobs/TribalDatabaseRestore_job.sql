@@ -27,7 +27,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'TribalDatabaseRestore_job',
 		@delete_level=0, 
 		@description=N'Job to take the daily backup from Tribal, thast they push to BLOB storage. Drop the current database, and restore from timestamped backup into this SQL MI', 
 		@category_name=N'Database Maintenance', 
-		@owner_login_name=N'KarlWootten', @job_id = @jobId OUTPUT
+		@owner_login_name=N'<Admin>', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Drop]    Script Date: 7/2/2019 10:13:05 AM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Drop', 

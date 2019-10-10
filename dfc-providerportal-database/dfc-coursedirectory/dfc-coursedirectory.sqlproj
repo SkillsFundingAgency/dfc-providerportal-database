@@ -376,11 +376,27 @@
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipLocationsDetailsByApprenticeshipId.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipLocationsByApprenticeshipId.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipsByProviderId.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipQACompliance.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipQAComplianceFailureReason.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipQAStyle.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipQAStyleFailureReason.sql" />
+    <Build Include="Tribal\Tables\Venue.sql" />
+    <Build Include="Tribal\Tables\Subregion.sql" />
+    <Build Include="Tribal\Tables\RecordStatus.sql" />
+    <Build Include="Tribal\Tables\Location.sql" />
+    <Build Include="Tribal\Tables\GeoLocation.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipLocationDeliveryMode.sql" />
+    <Build Include="Tribal\Tables\ApprenticeshipLocation.sql" />
+    <Build Include="Tribal\Tables\Apprenticeship.sql" />
+    <Build Include="Tribal\Tables\Address.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />
     <None Include="Restore\Notes.txt" />
     <None Include="Restore\SQL Steps.png" />
     <None Include="Scripts\Jobs\TribalDatabaseRestore_job.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="dfc-coursedirectory.refactorlog" />
   </ItemGroup>
 </Project>

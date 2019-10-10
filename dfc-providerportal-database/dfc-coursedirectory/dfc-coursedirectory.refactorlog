@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="38c300be-ec8f-43bc-ba35-4120524d410a" ChangeDateTime="10/09/2019 08:58:19">
+    <Property Name="ElementName" Value="[Tribal].[ApprenticeshipQAComplianceFailureReason].[QAComplianceFailureReasonId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tribal].[ApprenticeshipQAComplianceFailureReason]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QAComplianceFailureReason" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8db4a1e-2940-49de-a2c1-74ec2ed89b70" ChangeDateTime="10/09/2019 09:36:07">
+    <Property Name="ElementName" Value="[Tribal].[ApprenticeshipQACompliance].[CreatedByUserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tribal].[ApprenticeshipQACompliance]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedByUserEmail" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b64cf01f-9368-4b4c-bec7-13d946830b4a" ChangeDateTime="10/09/2019 10:20:45">
+    <Property Name="ElementName" Value="[Tribal].[ApprenticeshipQAStyleFailureReason].[QAStyleFailureReasonId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tribal].[ApprenticeshipQAStyleFailureReason]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QAStyleFailureReason" />
+  </Operation>
+</Operations>

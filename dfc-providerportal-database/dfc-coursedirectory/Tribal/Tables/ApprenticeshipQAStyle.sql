@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Tribal].[ApprenticeshipQAStyle](
 	[ApprenticeshipQAStyleId] [int] NOT NULL,
 	[ApprenticeshipId] [int] NOT NULL,
-	[CreatedByUserId] [nvarchar](128) NOT NULL,
+	[CreatedByUserEmail] [nvarchar](280) NOT NULL,
 	[CreatedDateTimeUtc] [datetime] NOT NULL,
 	[TextQAd] [nvarchar](900) NULL,
 	[Passed] [bit] NOT NULL,

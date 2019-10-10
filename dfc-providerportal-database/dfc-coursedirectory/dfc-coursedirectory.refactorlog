@@ -21,4 +21,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="QAStyleFailureReason" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="87a245ca-28df-49ff-b809-1097504644f4" ChangeDateTime="10/10/2019 08:03:04">
+    <Property Name="ElementName" Value="[Tribal].[ApprenticeshipQAStyle].[CreatedByUserId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Tribal].[ApprenticeshipQAStyle]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CreatedByUserEmail" />
+  </Operation>
 </Operations>

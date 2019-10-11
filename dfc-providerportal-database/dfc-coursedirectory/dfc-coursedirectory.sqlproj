@@ -389,6 +389,8 @@
     <Build Include="Tribal\Tables\ApprenticeshipLocation.sql" />
     <Build Include="Tribal\Tables\Apprenticeship.sql" />
     <Build Include="Tribal\Tables\Address.sql" />
+    <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaDetailslViaApprenticeshipId.sql" />
+    <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaStyleDetails.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="dfc-coursedirectory.dacpac" />

@@ -11,7 +11,7 @@ BEGIN
       ,[TextQAd]
       ,[Passed]
       ,[DetailsOfQA]
-  FROM [dfc-coursedirectory].[Tribal].[ApprenticeshipQAStyle]
+  FROM [Tribal].[ApprenticeshipQAStyle]
   where ApprenticeshipId = @apprenticeshipId
 
   select qs.ApprenticeshipQAStyleId, qs.QAStyleFailureReason from Tribal.ApprenticeshipQAStyleFailureReason qs

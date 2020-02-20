@@ -393,7 +393,6 @@
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaStyleDetails.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="dfc-coursedirectory.dacpac" />
     <None Include="Restore\Notes.txt" />
     <None Include="Restore\SQL Steps.png" />
     <None Include="Scripts\Jobs\TribalDatabaseRestore_job.sql" />

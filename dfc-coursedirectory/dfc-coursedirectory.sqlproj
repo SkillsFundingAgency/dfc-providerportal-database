@@ -391,6 +391,7 @@
     <Build Include="Tribal\Tables\Address.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaDetailslViaApprenticeshipId.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaStyleDetails.sql" />
+    <Build Include="Security\Pttcd.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Restore\Notes.txt" />

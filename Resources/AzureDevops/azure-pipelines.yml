@@ -1,5 +1,5 @@
 ﻿variables:
-  SolutionName: '$(System.DefaultWorkingDirectory)\dfc-providerportal-database.sln'
+  PathToSolutionFile: '$(System.DefaultWorkingDirectory)\dfc-providerportal-database.sln'
   BuildPlatform: 'any cpu'
   BuildConfiguration: 'release'
 
@@ -25,12 +25,12 @@ jobs:
   - task: NuGetCommand@2
     displayName: 'NuGet restore'
     inputs:
-      restoreSolution: '${{ variables.SolutionName }}'
+      restoreSolution: '${{ variables.PathToSolutionFile }}'
 
   - task: VSBuild@1
-    displayName: 'Build solution ${{ variables.SolutionName }}'
+    displayName: 'Build solution ${{ variables.PathToSolutionFile }}'
     inputs:
-      solution: '${{ variables.SolutionName }}'
+      solution: '${{ variables.PathToSolutionFile }}'
       msbuildArgs: '/p:OutDir=$(build.artifactstagingdirectory)'
       platform: '${{ variables.BuildPlatform }}'
       configuration: '${{ variables.BuildConfiguration }}'

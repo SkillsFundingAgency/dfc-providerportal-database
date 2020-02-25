@@ -1,4 +1,4 @@
-﻿variables:
+variables:
   SolutionName: '$(System.DefaultWorkingDirectory)\dfc-providerportal-database.sln'
   BuildPlatform: 'any cpu'
   BuildConfiguration: 'release'

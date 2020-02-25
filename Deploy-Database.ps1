@@ -5,7 +5,7 @@ param (
 
 $ErrorActionPreference = "Stop"
 
-$sqlPackage = "C:\Program Files (x86)\Microsoft SQL Server\140\DAC\bin\SqlPackage.exe"
+$sqlPackage = "C:\Program Files\Microsoft SQL Server\150\DAC\bin\SqlPackage.exe"
 $msbuild = "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\MSBuild.exe"
 
 $databaseProject = Join-Path $PSScriptRoot "dfc-coursedirectory"

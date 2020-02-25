@@ -1,0 +1,42 @@
+﻿variables:
+  SolutionName: '$(System.DefaultWorkingDirectory)\dfc-providerportal-database.sln'
+  BuildPlatform: 'any cpu'
+  BuildConfiguration: 'release'
+
+pool:
+  name: NCS - CI and CD
+  demands:
+  - msbuild
+  - visualstudio
+
+trigger:
+  - master
+  - dev
+
+pr:
+  - master
+  - dev
+
+jobs:
+- job: BuildDatabaseProject
+  displayName: 'Build Database Project'
+
+  steps:
+  - task: NuGetCommand@2
+    displayName: 'NuGet restore'
+    inputs:
+      restoreSolution: '${{ variables.SolutionName }}'
+
+  - task: VSBuild@1
+    displayName: 'Build solution ${{ variables.SolutionName }}'
+    inputs:
+      solution: '${{ variables.SolutionName }}'
+      msbuildArgs: '/p:OutDir=$(build.artifactstagingdirectory)'
+      platform: '${{ variables.BuildPlatform }}'
+      configuration: '${{ variables.BuildConfiguration }}'
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Artifact
+    inputs:
+      pathtoPublish: $(Build.ArtifactStagingDirectory)
+      artifactName: database

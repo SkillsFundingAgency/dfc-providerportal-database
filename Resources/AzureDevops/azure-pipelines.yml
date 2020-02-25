@@ -1,4 +1,4 @@
-﻿variables:
+variables:
   PathToSolutionFile: '$(System.DefaultWorkingDirectory)\dfc-providerportal-database.sln'
   BuildPlatform: 'any cpu'
   BuildConfiguration: 'release'
@@ -10,12 +10,12 @@ pool:
   - visualstudio
 
 trigger:
-  - master
-  - dev
+- master
+- dev
 
 pr:
-  - master
-  - dev
+- master
+- dev
 
 jobs:
 - job: BuildDatabaseProject

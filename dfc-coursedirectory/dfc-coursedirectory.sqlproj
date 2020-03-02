@@ -138,6 +138,7 @@
     <Folder Include="Scripts\Jobs" />
     <Folder Include="Pttcd" />
     <Folder Include="Pttcd\Tables" />
+    <Folder Include="Pttcd\Indexes" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -395,6 +396,8 @@
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaStyleDetails.sql" />
     <Build Include="Security\Pttcd.sql" />
     <Build Include="Pttcd\Tables\Users.sql" />
+    <Build Include="Pttcd\Tables\UserSignIns.sql" />
+    <Build Include="Pttcd\Indexes\IX_UserSignsIn_UserId.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Restore\Notes.txt" />

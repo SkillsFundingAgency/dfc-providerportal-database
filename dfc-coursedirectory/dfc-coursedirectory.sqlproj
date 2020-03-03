@@ -398,6 +398,10 @@
     <Build Include="Pttcd\Tables\Users.sql" />
     <Build Include="Pttcd\Tables\UserSignIns.sql" />
     <Build Include="Pttcd\Indexes\IX_UserSignsIn_UserId.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissions.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionProviderAssessments.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeships.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeshipAssessments.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Restore\Notes.txt" />

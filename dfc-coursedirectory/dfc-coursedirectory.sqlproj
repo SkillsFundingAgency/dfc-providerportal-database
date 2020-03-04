@@ -136,6 +136,9 @@
     <Folder Include="Restore" />
     <Folder Include="Scripts" />
     <Folder Include="Scripts\Jobs" />
+    <Folder Include="Pttcd" />
+    <Folder Include="Pttcd\Tables" />
+    <Folder Include="Pttcd\Indexes" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql">
@@ -391,9 +394,16 @@
     <Build Include="Tribal\Tables\Address.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaDetailslViaApprenticeshipId.sql" />
     <Build Include="dbo\Stored Procedures\dfc_GetApprenticeshipQaStyleDetails.sql" />
+    <Build Include="Security\Pttcd.sql" />
+    <Build Include="Pttcd\Tables\Users.sql" />
+    <Build Include="Pttcd\Tables\UserSignIns.sql" />
+    <Build Include="Pttcd\Indexes\IX_UserSignsIn_UserId.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissions.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionProviderAssessments.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeships.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeshipAssessments.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="dfc-coursedirectory.dacpac" />
     <None Include="Restore\Notes.txt" />
     <None Include="Restore\SQL Steps.png" />
     <None Include="Scripts\Jobs\TribalDatabaseRestore_job.sql" />

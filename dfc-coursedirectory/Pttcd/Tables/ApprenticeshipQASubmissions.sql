@@ -6,5 +6,5 @@
 	[SubmittedByUserId] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissions_SubmittedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
 	[ProviderBriefOverview] NVARCHAR(MAX) NOT NULL,
 	[ApprenticeshipQAStatus] TINYINT NOT NULL,
-	[LastAssessedBy] VARCHAR(100) CONSTRAINT [FK_ApprenticeshipQASubmissions_LastAssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId])
+	[LastAssessedByUserId] VARCHAR(100) CONSTRAINT [FK_ApprenticeshipQASubmissions_LastAssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId])
 )

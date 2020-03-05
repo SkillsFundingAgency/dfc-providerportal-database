@@ -1,9 +1,9 @@
-﻿CREATE TABLE [dbo].[ApprenticeshipQASubmissionApprenticeshipAssessments]
+﻿CREATE TABLE [Pttcd].[ApprenticeshipQASubmissionApprenticeshipAssessments]
 (
 	[ApprenticeshipQASubmissionApprenticeshipAssessmentId] INT IDENTITY NOT NULL CONSTRAINT [PK_ApprenticeshipQASubmissionApprenticeshipAssessments] PRIMARY KEY,
 	[ApprenticeshipQASubmissionId] INT NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_QASubmission] FOREIGN KEY REFERENCES [Pttcd].[ApprenticeshipQASubmissions] ([ApprenticeshipQASubmissionId]),
 	[AssessedOn] DATETIME NOT NULL,
-	[AssessedBy] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_AssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
+	[AssessedByUserId] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_AssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
 	[Passed] BIT NOT NULL,
 	[CompliancePassed] BIT NOT NULL,
 	[ComplianceFailedReasons] INT NOT NULL,

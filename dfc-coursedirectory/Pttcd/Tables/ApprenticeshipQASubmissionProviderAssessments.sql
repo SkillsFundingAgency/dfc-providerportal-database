@@ -3,7 +3,7 @@
 	[ApprenticeshipQASubmissionProviderAssessmentsId] INT IDENTITY NOT NULL CONSTRAINT [PK_ApprenticeshipQASubmissionProviderAssessments] PRIMARY KEY,
 	[ApprenticeshipQASubmissionId] INT NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionProviderAssessments_QASubmission] FOREIGN KEY REFERENCES [Pttcd].[ApprenticeshipQASubmissions] ([ApprenticeshipQASubmissionId]),
 	[AssessedOn] DATETIME NOT NULL,
-	[AssessedBy] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionProviderAssessments_AssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
+	[AssessedByUserId] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionProviderAssessments_AssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
 	[Passed] BIT NOT NULL,
 	[CompliancePassed] BIT NOT NULL,
 	[ComplianceFailedReasons] INT NOT NULL,

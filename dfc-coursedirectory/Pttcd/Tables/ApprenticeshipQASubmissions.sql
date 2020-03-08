@@ -7,5 +7,7 @@
 	[ProviderBriefOverview] NVARCHAR(MAX) NOT NULL,
 	[Passed] BIT,
 	[LastAssessedByUserId] VARCHAR(100) CONSTRAINT [FK_ApprenticeshipQASubmissions_LastAssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
-	[LastAssessedOn] DATETIME
+	[LastAssessedOn] DATETIME,
+	[ProviderAssessmentPassed] BIT,
+	[ApprenticeshipAssessmentsPassed] BIT
 )

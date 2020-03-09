@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Pttcd].[ApprenticeshipQASubmissionApprenticeshipAssessments]
 (
 	[ApprenticeshipQASubmissionApprenticeshipAssessmentId] INT IDENTITY NOT NULL CONSTRAINT [PK_ApprenticeshipQASubmissionApprenticeshipAssessments] PRIMARY KEY,
-	[ApprenticeshipQASubmissionId] INT NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_QASubmission] FOREIGN KEY REFERENCES [Pttcd].[ApprenticeshipQASubmissions] ([ApprenticeshipQASubmissionId]),
+	[ApprenticeshipQASubmissionApprenticeshipId] INT NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_ApprenticeshipQASubmissionApprenticeship] FOREIGN KEY REFERENCES [Pttcd].[ApprenticeshipQASubmissionApprenticeships] ([ApprenticeshipQASubmissionApprenticeshipId]),
 	[AssessedOn] DATETIME NOT NULL,
 	[AssessedByUserId] VARCHAR(100) NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeshipAssessments_AssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
 	[Passed] BIT NOT NULL,

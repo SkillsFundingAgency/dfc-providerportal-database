@@ -2,5 +2,6 @@
 (
 	[ApprenticeshipQASubmissionApprenticeshipId] INT IDENTITY NOT NULL CONSTRAINT [PK_ApprenticeshipQASubmissionApprenticeships] PRIMARY KEY,
 	[ApprenticeshipQASubmissionId] INT NOT NULL CONSTRAINT [FK_ApprenticeshipQASubmissionApprenticeships_QASubmission] FOREIGN KEY REFERENCES [Pttcd].[ApprenticeshipQASubmissions] ([ApprenticeshipQASubmissionId]),
-	[ApprenticeshipId] UNIQUEIDENTIFIER NOT NULL
+	[ApprenticeshipId] UNIQUEIDENTIFIER NOT NULL,
+	[ApprenticeshipMarketingInformation] NVARCHAR(MAX) NOT NULL
 )

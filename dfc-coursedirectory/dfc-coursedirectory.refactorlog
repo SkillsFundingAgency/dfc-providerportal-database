@@ -61,4 +61,11 @@
     <Property Name="NewSchema" Value="Pttcd" />
     <Property Name="IsNewSchemaExternal" Value="False" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="c51c0970-1020-4bd6-9cec-39b264b8f117" ChangeDateTime="03/09/2020 12:47:18">
+    <Property Name="ElementName" Value="[Pttcd].[ApprenticeshipQASubmissions].[ProviderBriefOverview]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[Pttcd].[ApprenticeshipQASubmissions]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[ProviderMarketingInformation]" />
+  </Operation>
 </Operations>

@@ -403,6 +403,7 @@
     <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeships.sql" />
     <Build Include="Pttcd\Tables\ApprenticeshipQASubmissionApprenticeshipAssessments.sql" />
     <Build Include="Pttcd\Tables\Providers.sql" />
+    <Build Include="Pttcd\Tables\ApprenticeshipQAUnableToCompleteInfo.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Restore\Notes.txt" />

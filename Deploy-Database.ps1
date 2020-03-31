@@ -1,6 +1,7 @@
 param (
   [Parameter(Mandatory = "true")][String]$DatabaseName,
-  [Parameter()][ValidateSet("Debug", "Release")][String]$BuildConfiguration = "Release"
+  [Parameter()][ValidateSet("Debug", "Release")][String]$BuildConfiguration = "Release",
+  [Switch]$Force = $false
 )
 
 $ErrorActionPreference = "Stop"
@@ -13,4 +14,5 @@ $dacpac = Join-Path $databaseProject "bin\${BuildConfiguration}\dfc-coursedirect
 
 $projectFile = Join-Path $databaseProject "dfc-coursedirectory.sqlproj"
 & $msbuild $projectFile /t:Build /p:Configuration=$BuildConfiguration /v:Quiet /nologo
-& $sqlPackage /Action:Publish /SourceFile:"$dacpac" /TargetDatabaseName:$DatabaseName /TargetServerName:"(local)"
+$blockOnPossibleDataLoss = if ($Force -eq $true) { 'False' } else { 'True '}
+& $sqlPackage /Action:Publish /SourceFile:"$dacpac" /TargetDatabaseName:$DatabaseName /TargetServerName:"(local)" /p:BlockOnPossibleDataLoss=$blockOnPossibleDataLoss

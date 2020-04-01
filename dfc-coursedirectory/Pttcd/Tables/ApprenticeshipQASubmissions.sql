@@ -9,5 +9,6 @@
 	[LastAssessedByUserId] VARCHAR(100) CONSTRAINT [FK_ApprenticeshipQASubmissions_LastAssessedByUser] FOREIGN KEY REFERENCES [Pttcd].[Users] ([UserId]),
 	[LastAssessedOn] DATETIME,
 	[ProviderAssessmentPassed] BIT,
-	[ApprenticeshipAssessmentsPassed] BIT
+	[ApprenticeshipAssessmentsPassed] BIT,
+	[HidePassedNotification] BIT NOT NULL CONSTRAINT [DF_ApprenticeshipQASubmissions_HidePassedNotification] DEFAULT (0)
 )
